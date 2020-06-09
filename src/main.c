@@ -1,17 +1,23 @@
-/* Contador de palavras
+/* Tarefa de decifrar uma cifra
  *
- * Este programa recebera uma serie de caracteres representando palavras em sua
- * entrada. Ao receber um caractere fim de linha ('\n'), deve imprimir na tela o
- * numero de palavras separadas que recebeu e, apos, encerrar.
+ * Dica: veja em referencia/cifrador.c o codigo-fonte do programa
+ * que gerou as cifras que voce precisa decifrar!
  */
 
 #include <stdio.h>
 
+#define TAM_BUFFER 50
+char buffer_entrada[TAM_BUFFER];
+char buffer_saida[TAM_BUFFER];
+
 int main() {
+  /* Leitura da entrada */
+  fgets(buffer_entrada, TAM_BUFFER, stdin);
 
-  int x, y;
 
-  scanf("%d %d\n", &x, &y);
-  printf("%d\n", x + 200);
+
+  /* Escrever saida na tela */
+  printf("%s\n", buffer_saida);
+
   return 0;
 }
